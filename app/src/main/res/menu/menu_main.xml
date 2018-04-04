@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_home"
+        android:title="Home"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/toolbar_muziek"
+        android:title="Muziek"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/toolbar_favorieten"
+        android:title="Favorieten"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/toolbar_quotes"
+        android:title="Quotes"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/toolbar_about"
+        android:title="About"
+        app:showAsAction="ifRoom"/>
 </menu>

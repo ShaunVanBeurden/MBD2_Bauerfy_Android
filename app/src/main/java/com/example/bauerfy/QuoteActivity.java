@@ -7,12 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class QuoteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_quote);
 
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.toolbar_home:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
                 return true;
             case R.id.toolbar_muziek:
                 return true;
             case R.id.toolbar_favorieten:
                 return true;
             case R.id.toolbar_quotes:
-                Intent intent = new Intent(this, QuoteActivity.class);
-                startActivity(intent);
                 return true;
             case R.id.toolbar_about:
                 return true;
